@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Form Survey</title>
+</head>
+<body>
+  <section>
+    <h1 class="title">Бланк опитування</h1>
+
+    <p class="description">
+      Дякуємо, що знайшли час, щоб допомогти нам покращити платформу.
+    </p>
+
+    <div class="form">
+      <form action="">
+        <label for="name">Ім'я:</label> 
+          <input 
+            type="text" 
+            class="name" 
+            placeholder="Введить ім'я" required>
+        <label for="email">Email:</label> 
+          <input 
+            type="email" 
+            class="email" 
+            placeholder="Введить e-mail: example@gmail.com)" 
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            title="Будь ласка, введіть дійсну електронну адресу." required>
+        <label for="age">Вік (необов'язково):</label>
+          <input 
+            type="number" 
+            class="number" 
+            min="18" max="65" step="1" 
+            placeholder="Введить вік (ціле число від 18 до 65)">
+        <label for="dropdown">Який варіант найкраще описує вашу поточну роль?</label>
+        <select class="dropdown" name="dropdown">
+          <option value="choose" disabled selected>Виберіть поточну роль</option>
+          <option value="student">Студент</option>
+          <option value="worker">Працюючий</option>
+          <option value="other">Інше</option>
+        </select>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
