@@ -16,11 +16,11 @@ body {
     box-sizing: border-box;
   
 section {
-  content: "";
+/*   content: "";
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 0; */
+  width: 80%;
   height: 100%; 
   background-color: rgba(150, 4, 125, 0.5);
 } 
